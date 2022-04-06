@@ -1,0 +1,39 @@
+.container-nav {
+    background-color: rgba(241, 211, 170, 0);
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Karma', serif;
+    position: absolute;
+    z-index: 1;
+    .logo {
+        margin-left: 5px;
+        img {
+            position: absolute;
+            width: 250px;
+            height: 200px;
+            z-index: 1;
+        }
+    }
+    ul {
+        width: 800px;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        margin-top: 40px;
+    }
+    li {
+        width: 130px;
+        height: 60px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    a {
+        font-size: 2.2rem;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        color: #530b18;
+    }
+}

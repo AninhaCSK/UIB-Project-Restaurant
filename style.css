@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5333333333), rgba(255, 255, 255, 0.5333333333)), url("../images/form.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: "Karma", sans-serif;
+}
+
+.carousel-inner img {
+  width: 100vw;
+  height: 100vh;
+}
+.carousel-inner h1 {
+  font-size: 6rem;
+  color: black;
+  position: absolute;
+  top: -400px;
+  padding-left: 2px;
+  box-shadow: 5px 5px 5px 5px black;
+  background-color: rgba(250, 235, 215, 0.568);
+  color: #530b18;
+}
+.carousel-inner p {
+  font-size: 3rem;
+  color: black;
+  position: absolute;
+  top: -320px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px 5px black;
+  background-color: rgba(250, 235, 215, 0.568);
+  color: #530b18;
+}
+
+.container-nav {
+  background-color: rgba(241, 211, 170, 0);
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Karma", serif;
+  position: absolute;
+  z-index: 1;
+}
+.container-nav .logo {
+  margin-left: 5px;
+}
+.container-nav .logo img {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  z-index: 1;
+}
+.container-nav ul {
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 40px;
+}
+.container-nav li {
+  width: 130px;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+}
+.container-nav a {
+  font-size: 2.2rem;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  color: #530b18;
+}
+
+.container-menu {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-menu .menu {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container-menu .menu h2 {
+  align-items: center;
+  font-size: 4rem;
+}
+.container-menu .menu-inner {
+  width: 100%;
+  height: 860px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.container-menu .menu-inner .menu-items {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.container-menu .menu-inner .menu-items div {
+  transition: 0.6s;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+}
+.container-menu .menu-inner .menu-items div img {
+  overflow: hidden;
+  transition: 0.6s;
+  width: 400px;
+  height: 400px;
+  box-shadow: inset -1px 3px 8px 5px rgba(0, 0, 0, 0.73), -1px 3px 28px 5px #833e22;
+}
+.container-menu .menu-inner .menu-items div img:hover {
+  opacity: 0.3;
+}
+.container-menu .menu-inner .menu-items div .middle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  opacity: 0;
+}
+.container-menu .menu-inner .menu-items div .middle .text {
+  position: absolute;
+  top: 0;
+  font-size: 6rem;
+  margin-top: 150px;
+  opacity: 1;
+  text-shadow: 1px 3px 0 #ffffff, 1px 13px 5px #aba8a8;
+  font-weight: bold;
+  color: #530b18;
+}
+.container-menu .menu-inner .menu-items div .middle:hover {
+  opacity: 1;
+}
+.container-menu .menu-inner .menu-items div:hover img {
+  transition: 0.6s;
+  transform: scale(1.2);
+}
+
+.container-form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-form div h3 {
+  font-size: 4rem;
+}
+.container-form div p {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.container-form form {
+  width: 500px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.11);
+  border: 3px solid black;
+  border-radius: 2px;
+  box-shadow: 2px 5px 16px 0px #833e22;
+  backdrop-filter: blur(5px);
+}
+.container-form form input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.container-form form button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  color: black;
+}
+.container-form form button:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

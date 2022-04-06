@@ -1,0 +1,22 @@
+{
+    "name": "project-restaurant",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass style.scss style.css -w",
+        "serve": "live-server src",
+        "watch": "sass --watch ./style.scss:./style.css",
+        "start": "run-p serve watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "^5.1.3",
+        "sass": "^1.49.11"
+    },
+    "devDependencies": {
+        "node-sass": "^7.0.1"
+    },
+    "description": ""
+}
