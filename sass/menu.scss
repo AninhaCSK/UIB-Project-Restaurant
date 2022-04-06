@@ -7,6 +7,10 @@
         width: 100vw;
         display: flex;
         justify-content: center;
+        a {
+            text-decoration: none;
+            color: black;
+        }
         h2 {
             padding-top: 50px;
             align-items: center;
