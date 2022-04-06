@@ -25,32 +25,6 @@ button {
   display: none;
 }
 
-footer {
-  width: 100%;
-  height: 40px;
-  background-color: black;
-  position: sticky;
-}
-footer .container-midia {
-  display: flex;
-  width: 100%;
-  height: 40px;
-  justify-content: center;
-}
-footer .container-midia p {
-  margin: 5px;
-  color: white;
-  font-size: 1.6rem;
-}
-footer .container-midia a {
-  margin-top: 5px;
-  padding: 5px;
-  width: 35px;
-  height: 35px;
-  align-items: center;
-  color: white;
-}
-
 .carousel-inner img {
   width: 100vw;
   height: 100%;
@@ -76,11 +50,19 @@ footer .container-midia a {
   color: #530b18;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
+  .carousel-inner p {
+    display: none;
+  }
+  .carousel-inner h1 {
+    font-size: 4rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .carousel-inner h1 {
+    font-size: 2rem;
+  }
+}
+
 .container-nav {
   background-color: rgba(241, 211, 170, 0);
   backdrop-filter: blur(10px);
@@ -139,6 +121,7 @@ footer .container-midia a {
   padding-top: 50px;
   align-items: center;
   font-size: 6rem;
+  color: #530b18;
 }
 .container-menu .menu-inner {
   width: 100%;
@@ -148,11 +131,21 @@ footer .container-midia a {
   justify-content: center;
   position: relative;
 }
+@media screen and (min-width: 1186px) and (max-width: 1624px) {
+  .container-menu .menu-inner {
+    height: 1290px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1185px) {
+  .container-menu .menu-inner {
+    height: 2590px;
+  }
+}
 .container-menu .menu-inner .menu-items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 70%;
-  flex-wrap: wrap;
   gap: 30px;
 }
 .container-menu .menu-inner .menu-items div {
@@ -163,7 +156,6 @@ footer .container-midia a {
   height: 400px;
 }
 .container-menu .menu-inner .menu-items div img {
-  overflow: hidden;
   transition: 0.6s;
   width: 400px;
   height: 400px;
@@ -196,19 +188,19 @@ footer .container-midia a {
 
 .container-form {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .container-form div h3 {
-  font-size: 4rem;
+  font-size: 4.8rem;
 }
 .container-form div p {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 .container-form form {
   width: 500px;
@@ -238,10 +230,41 @@ footer .container-midia a {
 .container-form form button:hover {
   opacity: 1;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 500px) and (max-width: 1185px) {
   .container-form {
-    margin-top: 1500px;
+    margin-top: 1700px;
   }
+}
+@media screen and (min-width: 1186px) and (max-width: 1799px) {
+  .container-form {
+    margin-top: 300px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  position: sticky;
+}
+footer .container-midia {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+}
+footer .container-midia p {
+  margin: 5px;
+  color: white;
+  font-size: 1.6rem;
+}
+footer .container-midia a {
+  margin-top: 5px;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
