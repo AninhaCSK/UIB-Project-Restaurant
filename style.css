@@ -18,6 +18,31 @@ body {
   font-family: "Karma", sans-serif;
 }
 
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+footer .container-midia {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+}
+footer .container-midia p {
+  margin: 5px;
+  color: white;
+  font-size: 1.6rem;
+}
+footer .container-midia a {
+  margin-top: 5px;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  color: white;
+}
+
 .carousel-inner img {
   width: 100vw;
   height: 100vh;
@@ -127,9 +152,6 @@ body {
   width: 400px;
   height: 400px;
   box-shadow: inset -1px 3px 8px 5px rgba(0, 0, 0, 0.73), -1px 3px 28px 5px #833e22;
-}
-.container-menu .menu-inner .menu-items div img:hover {
-  opacity: 0.3;
 }
 .container-menu .menu-inner .menu-items div .middle {
   position: absolute;
