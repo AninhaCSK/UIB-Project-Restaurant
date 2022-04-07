@@ -3,9 +3,6 @@
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    // @media screen and (min-width: 768px) and (max-width: 1024px) {
-    //    height: ;
-    // }
     .menu {
         width: 100vw;
         display: flex;
@@ -47,14 +44,10 @@
                 width: 400px;
                 height: 400px;
                 img {
-                    // overflow: hidden;
                     transition: 0.6s;
                     width: 400px;
                     height: 400px;
                     box-shadow: inset -1px 3px 8px 5px rgba(0, 0, 0, 0.73), -1px 3px 28px 5px #833e22;
-                    &:hover {
-                        // opacity: 0.3;???
-                    }
                 }
                 .middle {
                     position: absolute;
